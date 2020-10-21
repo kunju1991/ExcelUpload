@@ -1,0 +1,18 @@
+<mvc:View controllerName="ui.uploadExcelUpload.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:ui= "sap.ui.unified" xmlns:l="sap.ui.layout" isplayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<l:VerticalLayout>
+						<ui:FileUploader id="idfileUploader" width="50%"
+                        sameFilenameAllowed="false" placeholder="Choose a CSV file"
+                        style="Emphasized">
+                        </ui:FileUploader>
+                        <Button text="Upload" press="onUpload"></Button>
+					</l:VerticalLayout>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
